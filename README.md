@@ -19,11 +19,12 @@ We look into the problem and what?... the encoding is Latin1.
 **What to do?**
 
 The problems and difficulties are brilliantly explained and solved in Nic Jasma's article.
+
 Anyway if you are lazy: make a backup of your database, import it on a test machine and run this script to see if it solves your problem.
 
 ---
 
-## Why this script is there is already the Nic Jasma one?
+## Why this script if there is already the Nic Jasma one?
 
 The company I work for had some hundreds of VPS with this problem, intall PHP on all the machines just for run the Nic Jasma's script isn't desirable.
 My boss preferred a Python version (**rightfully**) so here we are.
