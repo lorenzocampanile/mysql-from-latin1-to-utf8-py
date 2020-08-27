@@ -26,5 +26,5 @@ Anyway if you are lazy: make a backup of your database, import it on a test mach
 
 ## Why this script if there is already the Nic Jasma one?
 
-The company I work for had some hundreds of VPS with this problem, intall PHP on all the machines just for run the Nic Jasma's script isn't desirable.
+The company I work for had some hundreds of VPS with this problem, install PHP on all the machines just for run the Nic Jasma's script isn't desirable.
 My boss preferred a Python version (**rightfully**) so here we are.
