@@ -12,7 +12,8 @@ This script is just the Python version of the [Nic Jasma script in PHP](https://
 ## Summary
 
 Sometimes it happens, after years, that we realize that a company database is using Latin1 encoding.
-Although the business software uses this database as if it were UTF-8 (almost) everything worked and we didn't notice anything until a customer pointed out a flaw due to a WHERE clause.
+
+Although the business software uses this database as if it were UTF-8, (almost) everything worked and we didn't notice anything until a customer pointed out a flaw due to a WHERE clause.
 
 We look into the problem and what?... the encoding is Latin1.
 
