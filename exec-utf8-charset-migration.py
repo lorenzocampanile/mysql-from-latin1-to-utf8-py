@@ -169,6 +169,17 @@ class MySQLCharsetConverter():
         if not self.pretend_mode:
             self.info_db_cursor.execute(set_default_collation_cmd)
 
+        # Commit all modifications, rollback it there are any errors
+        try:
+            target_db.commit()
+            print('\n\n------------ MYSQL CONVERSION TO UTF-8 DONE -------------\n\n')
+        except:
+            target_db.rollback()
+
+        # Close all the database connections
+        target_db.close()
+        info_db.close()
+
 
     def _collect_table_to_utf8_sql(self, table):
         '''Collects SQL commands for converting a database table to UTF-8.'''
