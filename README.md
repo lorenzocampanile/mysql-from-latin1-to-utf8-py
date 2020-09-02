@@ -30,7 +30,7 @@ Anyway if you are lazy: make a backup of your database, import it on a test mach
 ## How to use
 
 Simply download and run the script:
-```
+```bash
 cd /tmp/
 wget https://github.com/lorenzocampanile/mysql-from-latin1-to-utf8-py/archive/master.zip
 unzip master.zip
@@ -39,7 +39,7 @@ python exec-utf8-charset-migration.py --dbhost=localhost --dbname=mydatabase --d
 ```
 
 If you just want to see the SQL statements without executing them, run the script in the pretend mode:
-```
+```bash
 python exec-utf8-charset-migration.py --dbhost=localhost --dbname=mydatabase --dbuser=myuser --dbpass=mypass --process-enums --pretend-mode
 ```
 
