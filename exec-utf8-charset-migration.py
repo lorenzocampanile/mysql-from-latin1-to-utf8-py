@@ -197,6 +197,9 @@ class MySQLCharsetConverter():
 
             self._collect_columns_to_utf8_sql(tcolumn)
 
+        if table.collation in self.collation_map:
+            self.final_query_changes.append('DEFAULT COLLATE %s' % self.collation_map.get(table.collation))
+
     def _collect_columns_to_utf8_sql(self, tcolumn):
         '''Collects SQL commands for converting a database column to UTF-8.'''
 
